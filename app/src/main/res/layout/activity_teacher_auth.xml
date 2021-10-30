@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".Teacher.TeacherAuthActivity">
 
+    <EditText
+        android:id="@+id/idTeacherEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/idTeacherPswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:layout_marginTop="80dp"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/idTeacherEmail"
+        app:layout_constraintStart_toStartOf="@+id/idTeacherEmail"
+        app:layout_constraintTop_toBottomOf="@+id/idTeacherEmail"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/idSignUpTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up now"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/idTeacherPswd"
+        app:layout_constraintStart_toStartOf="@+id/idTeacherPswd"
+        app:layout_constraintTop_toBottomOf="@+id/idTeacherPswd"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/idLoginTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Now"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSignUpTV" />
 </androidx.constraintlayout.widget.ConstraintLayout>
