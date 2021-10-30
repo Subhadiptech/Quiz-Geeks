@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizGeeks">
+        <activity android:name=".Teacher.TeacherAuthActivity"></activity>
+        <activity android:name=".Student.StudentsAuthActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
