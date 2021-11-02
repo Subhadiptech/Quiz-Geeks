@@ -85,7 +85,7 @@ public class TecaherDashboardFragment extends Fragment {
                                         String para3 = snapshot.getString("totalTime");
                                         String para4 = snapshot.getString("posMarks");
                                         String para5 = snapshot.getString("negMarks");
-                                        dashList.add(new TeacherDashModel("",para2,para3,para4,para5) );
+                                        dashList.add(new TeacherDashModel(para1,para2,para3,para4,para5) );
                                         //now set data in RV
                                         adapter=new TeacherDashRVAdapter(dashList);
                                         teacherDashRV.setAdapter(adapter);

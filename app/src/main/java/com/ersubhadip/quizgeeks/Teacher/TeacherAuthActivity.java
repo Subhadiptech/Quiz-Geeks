@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -34,6 +35,7 @@ public class TeacherAuthActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String email= emailET.getText().toString();
                 String pswd= pswdET.getText().toString();
+                Log.d("####",email+pswd);
                 auth.signInWithEmailAndPassword(email,pswd);
                 Intent intent1=new Intent(TeacherAuthActivity.this,MainTeacherActivity.class);
                 startActivity(intent1);

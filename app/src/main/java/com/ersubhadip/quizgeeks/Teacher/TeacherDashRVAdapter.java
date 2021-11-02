@@ -1,5 +1,6 @@
 package com.ersubhadip.quizgeeks.Teacher;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,6 +52,7 @@ public class TeacherDashRVAdapter extends RecyclerView.Adapter<TeacherDashRVAdap
         public void setData(int position) {
             String s1,s2,s3,s4,s5;
             s1=dashList.get(position).getSetNumber();  t1.setText(s1);
+            Log.d("####",s1);
             s2=dashList.get(position).getTotalQuestions();  t2.setText(s2);
             s3=dashList.get(position).getTime();  t3.setText(s3);
             s4=dashList.get(position).getPosMarks();  t4.setText(s4);
