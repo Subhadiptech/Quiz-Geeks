@@ -8,7 +8,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/itemSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -23,25 +23,52 @@
         tools:ignore="HardcodedText" />
 
     <TextView
+        android:id="@+id/itemQuestions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Questions 10"
         android:textColor="@color/teal_200"
         android:textStyle="bold"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/itemSet"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/itemSet"
+        app:layout_constraintTop_toTopOf="@+id/itemSet"
         tools:ignore="HardcodedText" />
 
     <TextView
+        android:id="@+id/itemTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="30 minutes"
         android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:text="30 minutes"
+        app:layout_constraintEnd_toEndOf="@+id/itemSet"
+        app:layout_constraintStart_toStartOf="@+id/itemSet"
+        app:layout_constraintTop_toBottomOf="@+id/itemSet"
         tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/itemPos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+4"
+        android:textColor="#14EA1D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/itemNeg"
+        app:layout_constraintStart_toStartOf="@+id/itemQuestions"
+        app:layout_constraintTop_toTopOf="@+id/itemNeg" />
+
+    <TextView
+        android:id="@+id/itemNeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:textColor="#E3165C"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="32dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/itemPos"
+        app:layout_constraintTop_toBottomOf="@+id/itemQuestions" />
 </androidx.constraintlayout.widget.ConstraintLayout>
